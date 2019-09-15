@@ -40,14 +40,14 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
   res.render('index', {
     title: 'Weather App',
-    name: 'Andrew Mead'
+    name: 'Mingzhao Zhou'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about', {
     title: 'About Me',
-    name: 'Andrew Mead'
+    name: 'Mingzhao Zhou'
   });
 });
 
@@ -55,7 +55,7 @@ app.get('/help', (req, res) => {
   res.render('help', {
     helpText: 'This is some helpful text',
     title: 'Help',
-    name: 'Andrew Mead'
+    name: 'Mingzhao Zhou'
   });
 });
 
@@ -115,7 +115,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
   res.render('404', {
     title: '404',
-    name: 'Andrew Mead',
+    name: 'Mingzhao Zhou',
     errorMessage: 'Help article not found.'
   });
 });
@@ -124,7 +124,7 @@ app.get('*', (req, res) => {
   res.render('404', {
     title: '404',
     errorMessage: 'Page not found.',
-    name: 'Andrew Mead'
+    name: 'Mingzhao Zhou'
   });
 });
 
